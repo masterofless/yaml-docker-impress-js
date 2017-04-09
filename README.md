@@ -27,7 +27,5 @@ to see an index of existing presentations to go step through.
 Index Generation
 ----------------
 
-Until I expand the web server to do a decent dynamic index from the existing YAML files, I have a perl script to do that:
-
-    htdocs/index.pl > htdocs/index.html
-
+Purely to support what I do, I've set this up so it mounts the htdocs directory so edits to .yml and .css files are immediately servable by the web server.
+The index.html is generated and stored at image build time so is not dynamic.
