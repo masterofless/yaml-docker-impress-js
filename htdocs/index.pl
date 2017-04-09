@@ -1,10 +1,18 @@
 #!/usr/bin/perl
 
-print '<html><head></head><body>';
-print '<div id="main">';
+print <<"EOF";
+<html>
+    <head>
+        <title>YAML Presentations with Impress.js and Docker</title>
+        <link href="css/yaml-presents.css" rel="stylesheet" type="text/css" >
+    </head>
+    <body>
+        <h1>YAML Presentations with Impress.js and Docker</h1>
+        <div id="main">
+            <ul>
+EOF
 
-# file list
-print "<ul>\n";
+# YAML file list with proper presentation links and labels
 for $file (glob('*.yml')) {
   $base = $file;
   $base =~ s/\.yml//;
@@ -13,7 +21,10 @@ for $file (glob('*.yml')) {
   $label =~ s/([\w']+)/\u\L$1/g;
   print "<li><a href=\"preso.html?preso=$base\">$label</a></li>\n";
 }
-print "\n</ul>\n";
 
-print '</div>';
-print '</body></html>';
+print <<"EOF";
+            </ul>
+        </div>
+    </body>
+</html>
+EOF

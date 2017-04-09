@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Docker On a Mac
+title: Getting Started with Docker On a Mac - THIS IS NOW OUT OF DATE
 subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2015
 tldr: I got Docker, etc. running on my Mac, as seen here: <a target="_blank" href="https://docs.docker.com/installation/mac/">https://docs.docker.com/installation/mac/</a><p> Docker is useful.
 contents:
@@ -200,7 +200,7 @@ slides:
          <code>docker-machine ssh default -- -vnNTL '*:9201:localhost:9201'</code>
    -
       textClass: blue
-      text: '<img src="DockerPortMapping1.png">'
+      text: '<img src="img/DockerPortMapping1.png">'
    -
       textClass: blue
       text: 'And, the original plan was to stand up 2 containers, like this:<p><img src="DockerPortMapping2.png">'
