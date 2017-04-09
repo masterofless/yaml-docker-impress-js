@@ -1,0 +1,255 @@
+---
+title: The Fundamentals of Agile and Scrum
+subtitle: And DevOps.  But mostly Scrum.
+tldr: Agility is not Scrum.  Scrum is just one methodology that makes it easier to be Agile. Agility is simple to understand but hard to master, but every step closer is a good one if you keep improving in the long run.
+slides:
+    -
+        header: Agile and Avalon Consulting, LLC
+        textClass: blue
+        bullets:
+            - There *seems* to be a general alignment at Avalon Consulting, LLC that we should use Scrum for project work
+            - There seems to be an inconsistent understanding of what Agile and Scrum are
+            - There is inconsistent and limited application of Scrum in our proposals and project work
+    -
+        header: Decomposing Agile
+        thread: start
+        textClass: white
+        bullets:
+            - Agility, with a capital A, is a set of principles bigger than any specific implementation of it
+            - All Scrum is Agile, but not all Agile is Scrum
+            - Scrum is one high-level approach to implementing Agile methods
+            - Kanban, based on Toyota manufacturing insights, is another popular method
+            - DevOps is Agile++ integrating Admin and Ops early and often
+            - Consistent Quality/Predictability is key
+    -
+        header: Agile Is Embodied in its Values
+        thread: start
+        textClass: orange
+        bullets:
+            - People and interactions over processes and tools
+            - Working software over comprehensive documentation
+            - Customer collaboration over contract negotiation
+            - Responding to change over following a plan
+    -
+        header: Agile is Based On Principles
+        thread: start
+        textClass: orange
+        text: Agile is also based on 12 fundamental principles
+    -
+        header: 1. Customer-focused Value Delivery
+        textClass: orange
+        text: Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+    -
+        header: 2. Embracing Changing Requirements
+        textClass: orange
+        text: Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage
+    -
+        header: 3. Deliver Very Often
+        textClass: orange
+        text: Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale
+    -
+        header: 4. Bring Everyone Together
+        textClass: orange
+        text: Business people and developers must work together daily throughout the project
+    -
+        header: 5. Create Highly Functional Teams
+        textClass: orange
+        text: Build projects around motivated individuals.  Give them the environment and support they need, and trust them to get the job done
+    -
+        header: 6. Communicate Like Humans
+        textClass: orange
+        text: The most efficient and effective method of conveying information to and within a development team is face-to-face conversation
+    -
+        header: 7. Focus on Real Ends
+        textClass: orange
+        text: Working software is the primary measure of progress
+    -
+        header: 8. Sustained Predictability
+        textClass: orange
+        text: >
+            Agile processes promote sustainable development.  The sponsors, developers, and users should be able
+            to maintain a constant pace indefinitely
+    -
+        header: 9. Aspire to Excellence
+        textClass: orange
+        text: Continuous attention to technical excellence and good design enhances agility
+    -
+        header: 10. Reduce Unnecessary Work
+        textClass: orange
+        text: Simplicity -- the art of maximizing the amount of work not done -- is essential
+    -
+        header: 11. The People on the Ground Usually Know Best
+        textClass: orange
+        text: The best architectures, requirements, and designs emerge from self-organizing teams
+    -
+        header: 12. Regularly Improve
+        textClass: orange
+        text: At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly
+    -
+        header: Agile Is...
+        textClass: yellow
+        bullets:
+            - "Figuring out what is the most important stuff and focusing efforts on those items: Prioritization and Discipline"
+            - "Admitting what you do not know that matters: the Cone of Uncertainty"
+            - "Maximizing the amount of work NOT done: Real Work vs Meta-Work"
+            - "Operating as a Team: transparency, repeating processes and continuous improvement"
+            - Building the products you *need*, not necessarily the ones you *planned*
+            - Easily switching effort toward the currently most important things
+            - Creating high-trust environments through continuous, thoughtful communication, preferably face-to-face conversations
+            - Limiting work-in-progress to ensure completion of highest priorities
+            - Working at a sustainable and predictable pace
+    -
+        header: "Agile is Nearly Inseparable From High Performing Teams"
+        textClass: orange
+        thread: start
+        bullets:
+            - Positive, high-energy collaborative atmosphere
+            - Participative leadership
+            - Effective decision-making
+            - Open and clear communication
+            - "Alignment and shared goals: Specific, Measurable, Achievable, Relevant, Time-bound"
+            - "Valued diversity: experience, background, questions, thinking, viewpoints"
+            - Mutual trust
+            - Transparent, participative conflict management
+            - Defined roles and responsibilities
+            - Coordinative relationships
+    -
+        header: Scrum Is Just One (very popular) Agile Methodology
+        textClass: orange
+        thread: start
+        bullets:
+            - Creating working software (or other bits) with every sprint that meets a shared Definition of Done
+            - 5 levels of planning
+            - Sprinting with 4 ceremonies
+            - 3 Roles
+            - A consistent "Definition of Done" that the product must maintain, and every that increment must meet
+            - 3 Artifacts
+            - Lightweight
+            - Simple to understand
+            - Difficult to master
+    -
+        header: Scrum Is
+        textClass: orange
+        bullets:
+            - Founded on empirical process control theory, or empiricism
+            - Empiricism asserts that knowledge comes from experience and making decisions based on what is known
+            - Scrum employs an iterative, incremental approach to optimize predictability and control risk
+            - "Three pillars uphold every implementation of empirical process control: transparency, inspection, and adaptation"
+    -
+        header: Scrum is Not...
+        textClass: orange
+        bullets:
+            - A set of tools
+            - A set of mandates
+            - Failing to plan
+            - Not doing estimates
+            - Failing to prioritize
+            - A daily meeting
+    -
+        header: Scrum Includes 5 Levels of Planning
+        thread: start
+        textClass: orange
+        bullets:
+            - Product Visioning
+            - Product Road Mapping
+            - Release Planning
+            - Sprint Planning
+            - Daily Planning
+    -
+        header: A Prioritized Backlog is Key
+        bullets:
+            - Creation and maintenance of a product's prioritized backlog is absolutely critical, in the same way that having a script is critical to a great speech
+            - Document in detail only those backlog items that are expected to be acted on soon; the rest is waste
+            - Keep the product vision in mind and be rigorous about moving things down the priority list
+            - Identifying and answering critical questions is real work that should be on the backlog
+    -
+        header: Scrum Includes 3 Team Roles
+        thread: start
+        textClass: orange
+        bullets:
+            - Scrum Master
+            - Product Owner
+            - Development Team Member
+    -
+        header: Scrum Includes 3 Artifacts
+        thread: start
+        textClass: orange
+        bullets:
+            - Product Backlog
+            - Sprint Backlog
+            - Product Increment
+    -
+        header: Scrum Includes 1 Shared Definition of Done
+        thread: start
+        textClass: orange
+        bullets:
+            - Working builds and tests
+            - Quality metrics including code complexity, test coverage, latency, etc.
+            - Demonstrable results
+    -
+        header: Scrum Includes 4 Ceremonies
+        thread: start
+        textClass: orange
+        bullets:
+            - Sprint Planning
+            - Daily Standup
+            - Sprint Review
+            - Retrospective
+    -
+        header: Sprint Planning
+        textClass: white
+        bullets: 
+            - Set and align on Sprint goal(s)
+            - Figure out what can get done
+            - Figure out how the selected work can get done
+    -
+        header: Sprint Review Descrpition
+        textClass: white
+        bullets:
+            - Stakeholders invited by the Product Owner; all stakeholders should be considered
+            - Product Owner demonstrates the product increment for review by all the attending Stakeholders
+            - The development team says what went well, what didn't, what was discovered, how things were solved, etc.
+            - The timeline, budget, context, and opportunities are reviewed and expectations are discussed and adjusted
+            - The backlog is reviewed and may be groomed as the group collaborates on what should be done next
+            - "The Product Owner explains what Product Backlog items have been Done and what has not been Done"
+    -
+        header: Sprint Review Agenda
+        textClass: white
+        bullets:
+            - Product Owner (or the development team): demonstrates the product increment
+            - Product Owner explains what Product Backlog items have been Done and what has not been Done
+            - Development team describes the Sprint: what went well, what didn't, what was discovered, how things were solved, etc.
+            - The timeline, budget, context, and opportunities are reviewed and expectations are discussed and adjusted
+            - The Prioritized Backlog is reviewed and may be groomed as the larger group collaborates on what should be done next
+    -
+        header: Sprint Retrospective
+        textClass: white
+        bullets:
+            - Examine the sprint with regards to people, relationships, process, and tools
+            - Identify and order the major items that went well and potential improvements
+            - Create a plan for implementing improvements to the way the Scrum Team does its work
+    -
+        header: Daily Standups are Incredibly Valuable When Done Right
+        textClass: white
+        bullets:
+            - Standup proper should be <= 15 minutes, focusing on the plans for the day
+            - Problem-solving and other activities should be left to *after* standup proper (but should be done ASAP)
+            - Standups are for the *team*.  Stakeholder are welcome, often invited, but should speak when asked questions
+            - Healthy teams surface substantial issues in open settings
+            - Avoid the obvious, the mechanical, the repetitive, the boring
+            - Often the most important parts are the conversations that happen just *after* standup
+            - Try to have everyone on level ground
+            - Virtually all standup conversation should be clearly focused on a specific backlog item that everyone there knows.  Chickens that don't know can ask questions aftwerwards
+            - Stay focused on exactly what you did yesterday (and this morning), what you *plan* on doing, *specifically*, today and tomorrow morning, and what if *anything* you might need from anyone else.  This includes not just what *area* you might be working in, but the actual hands-on thread-of-effort you are working *on*, and what *outcome* you are striving for today
+            - It is NOT a status report.  No task ETAs, no percentage complete, etc.
+            - Tie comments back to the Sprint Backlog Item, not just a task. A task is a *personal* framing of the sprint plan; the *backlog item* is the *shared* framing of the sprint plan
+    -
+        header: Common Misconceptions
+        textClass: orange
+        thread: start
+        bullets:
+            - User Stories are required
+            - Agile teams do not document
+            - Scrum Masters are just Project Managers
+            - Agile is just about being flexible
+            - Agile teams don't plan or estimate work

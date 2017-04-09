@@ -1,0 +1,113 @@
+---
+title: More Cool Git
+subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2015
+tldr: You can do some really cool things with git
+contents:
+    - Help
+    - Aliases
+    - Log Options
+    - "Where did THAT come from: Diff and Blame"
+    - Interactive Rebase
+    - Cherry Picking Commits
+    - Bisect
+    - Visual Conflict Resolution
+    - gitk
+    - Rebase vs. Merge?
+    - Branching Models?
+    - "(As always: Vim stuff.  Oh, and powerline.)"
+slides:
+    -
+        thread: start
+        header: Git Help
+        textClass: white
+        text: >
+            <code>git help</code>
+            <code>git help -g</code>
+            <code>git help &lt;command | concept></code>
+            <code>git help -a</code>
+        bullets:
+            - Git has extensive help available right <pink>there</pink>
+    -
+        thread: start
+        header: Aliases
+        textClass: green
+        bullets:
+            - Aliases are simple to create and enable easy access to git's power
+            - git help <alias>
+            - Define in <yellow>~/.gitconfig</yellow>
+            - atop
+            - amend
+            - lola
+    -
+        thread: start
+        header: Log: Viewing Commit Histories in Useful Formats
+        textClass: yellow
+        bullets:
+            - oneline
+            - graph
+            - full vs. short
+            - all vs some
+            - abbrev-commit
+    -
+        thread: start
+        header: Diff, Blame and Show
+        textClass: blue
+        bullets:
+            - diff allows you to see the differences between current state or any 2 commits, for one file or the whole repo
+            - blame is used to show what commits yielded each line in a file
+            - show just shows a commmit, HEAD or specified
+    -
+        thread: start
+        header: Interactive Rebase
+        textClass: pink
+        bullets:
+            - "Interactive rebase enables one of the best advantages of git: incremental local commits but cohesive shared units-of-work"
+            - Interactive rebasing allows you to rewrite a local commit history, often merging or splitting commits to construct a better set of changes
+            - You can even resequence, drop or completely change them
+    -
+        thread: start
+        header: Cherry Picking Commits
+        textClass: orange
+        bullets:
+            - Cherry picking is normally used to test, or just view, a commit created elsewhere often by another person
+            - First let's try just a basic checkout to a specific commit, or tag
+            - Cherry picking applies the changes induced by a commit, which is different than checking out a repo as of a commit
+            - Cherry picking is often useful when working on multiple branches
+    -
+        thread: start
+        header: Bisect to Find Error-Inducing Commit
+        textClass: blue
+        bullets:
+            - Bisect can tell you what commit caused a test to fail
+            - Bisect run can do that for  you automatically so long as you can run a command with a meaningful exit code
+            - You don't need it often, but it can be a major timesaver when you do
+    -
+        thread: start
+        header: Visual Conflict Resolution
+        textClass: yellow
+        bullets:
+            - On MacOS, TwoBitLabs DiffMerge is free and visual
+            - On Linux, kdiff3 is free and visual
+            - vim, with fugitive, is all you need (and vimcasts.org)
+    -
+        thread: start
+        header: gitk
+        textClass: orange
+        text: >
+            On MacOS, you need the brew git, not the default:
+            <code>brew update && brew install git</code>
+            <code> gitk --all&</code>
+    -
+        thread: start
+        header: Rebase vs Merge
+        textClass: yellow
+        text: >
+            When would you prefer rebase to merge?
+    -
+        thread: start
+        header: Git Enables Flexible Branching Models
+        textClass: white
+        text: >
+           You can use flexible, powerful sharing and branching models with git, both in a shared repo with many contributors and with your own local branches.<p>
+           Git flow is based on a popular, generalized flow you probably don't need all the power of, but it is worth looking at.<p>
+           You are not tied to sticking with one model, and your tools will influence this.<p>

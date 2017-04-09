@@ -1,0 +1,35 @@
+---
+title: Git Basics
+tldr: How to Get Started with Git
+contents:
+  - Overview
+  - Initialize
+  - Commits and the Index
+  - Log (History)
+  - Diff
+  - Branching
+  - Merging and Rebasing
+  - Conflict Resolution
+  - Differences WRT Subversion
+    - Commit
+    - Checkout
+  - Show
+  - Blame
+  - Remotes
+    - Setup
+    - Pull
+    - Fetch
+    - Push
+slides:
+  -
+    thread: start
+    textClass: green
+    text: 
+  -
+    thread: start
+    textClass: pink
+    text: 
+  -
+    thread: start
+    textClass: blue
+    text: 

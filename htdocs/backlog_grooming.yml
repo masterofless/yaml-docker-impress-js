@@ -1,0 +1,161 @@
+---
+title: Backlog Grooming, Perhaps with JIRA and Trello
+subtitle: How to get the most business impact from a development team
+tldr: Backlog grooming is hard enough without the tail wagging the dog.  Be disciplined; Be Agile.
+slides:
+  -
+    header: 'The Problem: How to Wrangle Customer Stories into Requirements and Software'
+    thread: start
+    text: >
+      Customers often have large amounts of features identified and specified to some extent,
+      but translating that into work the team and do is challenging, but these problems are fairly well understood.
+      In short, proven Agile principles show us how to execute in order to succeed.
+    notes: >
+      Several teams have had challenges with this, as most do.
+  -
+    header: Remember and Embrace Agile Values
+    bullets:
+      - Individuals and Interactions Over Processes and Tools
+      - Working Software Over Comprehensive Documentation
+      - Customer Collaboration Over Contract Negotiation
+      - Responding to Change Over Following a Plan
+    notes: >
+      Remember: everything changes, and there is not enough time, so focus on the most important things, always
+  -
+    header: Apply Agile Principles
+    bullets:
+      - Customer satisfaction through early and continuous software delivery
+      - Accommodate changing requirements throughout the development process
+      - Frequent delivery of working software
+      - Collaboration between the business stakeholders and developers throughout the project
+      - Support, trust, and motivate the people involved
+      - Enable face-to-face interactions
+      - Working software is the primary measure of progress
+      - Agile processes to support a consistent development pace
+      - Attention to technical detail and design enhances agility
+      - Simplicity - Develop just enough to get the job done for right now
+      - Self-organizing teams encourage great architectures, requirements, and designs
+      - Regular reflections on how to become more effective
+  -
+    header: Scrum Does Include Planning Outside Sprints!
+    bullets:
+      - Product Visioning
+      - Product Road-mapping
+      - Release Planning
+      - Sprint Planning
+      - Daily Planning
+    notes: >
+      The vision is in fact critical to the development team in the short and long run so a proper system architecture can guide development
+      PLANNING is critical; plans are symptoms and should not be venerated
+  -
+    header: Why Plan?  Why is Vision Necessary?
+    bullets:
+      - To create alignment among a group so efforts can be effective at attaining goals
+      - To maximize impact over the long term
+      - To ensure the most efficient use of constrained resources
+      - To maximize the use of collective intelligence on hard problems
+      - Software product development is a uniquely complex human endeavor.  The complexity that must be understood and aligned on is very high.  
+      - Planning increases alignment and reduces divergence.
+      - Effective planning minimizes work, maximizes impact, and creates positive energy towards Product goals.
+  -
+    header: Software development is a Constraints Problem
+    bullets:
+      - There are always going to be more features required than there is time or people to build them
+      - 'The key is maximize the business impact of this slow, expensive group of people: the Development Team'
+      - The critical constraint is the detailed understanding, alignment of the team and the Customer, and the time and attention required to create that
+      - Therefore, FOCUS on the most important things, and limit that work-in-progress as much as possible
+      - Optimizing the focus of the team is the critical management capability
+  -
+    header: The Prioritized Product Backlog
+    thread: start
+    bullets:
+      - Contains backlog items for whatever is NOT done that might need to be
+      - The prioritization is critical, but should be easy to change as stuff happens
+      - Best expressed in terms that the business (realized by a Product Owner in Scrum) and/or product users
+      - Informed by the actual product as-is, to-be and unknowns
+  -
+    header: Types of Backlog Items
+    bullets:
+      - Epics - Big features to be decomposed
+      - Stories - Stimulus/Response, small enough to estimate and identify a reasonable number of Acceptance Criteria
+      - Spikes - time-boxed research/experiments to answer critical questions
+      - Documentation
+      - Quality Efforts - various kinds of test engineering and execution
+    notes: >
+      Epics are things like "Create a Document"
+      Stories are things like "Change a highlighted word to bold"
+      Spikes are things like "Figure out the best way to integrate Wordpress and Elastic"
+      Most application documentation is best done in the code repo itself all along the way
+      Quality efforts are things like performance testing, exploratory testing, etc.
+  -
+    header: Things That are NOT Backlog Items
+    bullets:
+      - Tasks for individuals
+      - Requirements and specifications
+      - Minimal Viable Products (see Planning)
+      - Use Cases
+  -
+    header: The Key Disciplines of Successful Project Management
+    thread: start
+    bullets:
+      - Prioritization and Decomposition are THE key skills of managing projects
+      - Merciless prioritization is required to ensure critical resources (the team) are focused on the highest impact features
+      - Thorough decomposition is required for estimates to have any basis in reality, and for the team to actually build the right thing
+    notes: >
+      Not estimating
+      Not tracking
+      Not holding people accountable
+      Not making people happy
+  -
+    header: Estimation and Sizing
+    bullets:
+      - Estimating is really hard for lots of reasons
+      - Why size at all?
+      - Feature priority is affected by its cost
+      - Estimating requires decomposition and analysis
+      - Estimating surfaces important Spikes
+    notes: >
+      Since we suck so bad at it, why do it?
+      The team is new to working together
+      Every client has different expectations for tests and other -ilities
+      Usually we are integrating new things together, and those things are often new to us
+      Spikes are under-utilized, and are extremely useful in refining estimates so Product Owners can make better prioritization decisions
+  -
+    header: Smells
+    bullets:
+      - Using tools to communicate instead of conversations
+      - Trying to get out of Scrum ceremonies instead of maximizing their utility in having those conversations
+      - Focusing on meta-work (e.g. estimating) that doesn't create working software
+      - Failing to articulate acceptance criteria for features
+      - 'Gold-plating: prioritizing and/or building features not yet prioritized because we might need it at some point'
+  -
+    header: Tools Can Be Helpful
+    thread: start
+    bullets:
+      - Loading and updating data in such tools should just enough for effective Sprint Planning (this changes)
+      - 'Do not forget: working software is success.  Tracking work is meta work.  There are no points for issue/task tracking unless you are focused on something besides working software.'
+      - The most important feature is a managed, *prioritized* product backlog and sprint backlog that is easy for the team to use
+      - Humans are social animals and face-to-face conversations (as forced by meetings or co-location) are by far the most effective and efficient way of communicating
+      - Use the tools to support the work and the development team
+      - Don't make the team slave to the tool so management can feel warm and fuzzy about future throat choking
+      - Focus backlog tool usage only on the top X items; the rest are placeholders
+      - All backlog items, in the tool, should be considered primarily labels for hanging conversations on (and perhaps useful-to-team documentation)
+    notes: >
+      The most effective tool I have ever used, with a large team and very complex product, was index cards on white boards with magnets
+  -
+    header: JIRA, Specifically
+    bullets:
+      - Great tool, but you still have to decide how to use it
+    notes: >
+      Show this
+  -
+    header: Trello, Specifically
+    bullets:
+      - Great tool, but you still have to decide how to use it
+    notes: >
+      Show this
+  -
+    header: Related Questions
+    thread: start
+    bullets:
+      - where do we put feature documentation, specifications, acceptance criteria, test cases, data data

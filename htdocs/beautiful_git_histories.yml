@@ -1,0 +1,152 @@
+---
+title: Building Beautiful Git Histories
+subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2016
+tldr: Git is how you publish your contributions; you can and should be thoughtful about your commits
+contents:
+slides:
+    -
+        header: Why Care About Version Control Histories?
+        thread: start
+        textClass: yellow
+        bullets:
+            - We never did that with Subversion or CVS or anything else, so...
+            - "Actually smoother, easier ('chill') coding flow for you: you more easily, quickly, and with quality produce assets, and you're happier doing it (after you get over the learning curve)"
+            - "Greasy integration of code with others: easier assimilation and coordination of changes"
+            - Smaller, more-frequent integrations are easier to deal with
+            - Fewer, easier-to-find bugs because of the more-linear codebase history
+    -
+        header: What are "Better" Practices?
+        textClass: white
+        bullets:
+            - Examples of cleanliness and beauty
+            - "Better commit messages: the format is simple"
+            - Examples of risk and entropy
+    -
+        header: DevOps, CI, Automated Testing and Code Reviews
+        thread: start
+        textClass: blue
+        text: >
+            IMO it is a best practice to have every commit (in a shared repo) be submitted to something like Gerrit for code review,
+            upon which all the "normal" system tests are spun up and run against the branch you implicitly create.
+
+            Once that is successful, the branch should be fast-forward-able onto it's upstream.
+            It this the automatic testing for every change that does the most to ensure the quality of complex codebases.
+    -
+        header: Git Feature Branches, Redux
+        thread: start
+        textClass: orange
+        bullets:
+            - local branches vs. remote branches
+            - physically the same thing, but organizationally different
+            - the branching model you use drives what you do with remote/shared branches
+    -
+        header: Remote Branches
+        textClass: orange
+        bullets:
+            - Created for a variety of reasons driven by your branching model/needs
+            - Often just to share the patchset, or for code review
+            - Often used to do shared, coordinated development on larger features that will get merged after a relatively longer time/more commits
+            - Git does not impose any of this, this is what Gerrit, Beanstalk, BitBucket, and each group of people want to do
+    -
+        header: Local Branches
+        textClass: orange
+        bullets:
+            - 'Transient "topic" or "feature" branches are created for units-of-work: holistic, incremental upgrades to the codebase'
+            - Only you see these
+            - These usually do not, but very well may, track remote branches
+            - 'Until you `push` your commit(s) "up" to some other server, you have full control over local branches'
+    -
+        header: Rebasing to Master
+        thread: start
+        textClass: blue
+        bullets:
+            - "Rebase early and often"
+            - Every few hours, rebase your local branch to upstream
+            - Definitely after "finishing" a change, one more rebase-and-test before pushing
+    -
+        header: Fast Forward vs Merge Commits
+        textClass: blue
+        text: >
+            Bottom line: fast-forward commits are preferred most of the time, as they simplify the lineage of the code base.
+
+            It is easier to comprehend the simpler history, and it's easier to find where bugs happened (see git bisect)
+
+            But, depending on your <a href="http://nvie.com/posts/a-successful-git-branching-model/">branching model</a> <white>--no-ff</white> might be the exact right thing
+    -
+        header: Hack and Clean, Red->Green->Refactor
+        thread: start
+        textClass: white
+        bullets:
+          - Local commits are important but only interesting to you
+          - They are checkpoints into coding process where known conditions existed
+          - More, smaller commits as you work your way through a complete unit-of-work allow you to experiment and try things easily with less fear of losing track of where things are
+          - THEN, once a local unit-of-work has been achieved, it's easy to squash those commits together
+    -
+        header: "Squashing Local Commits Together: Interactive Rebase"
+        textClass: white
+        bullets:
+            - An interactive rebase is, by intent, quite different than a normal rebase even if the implementation is similar
+            - You are thrown into editing a "rebase script", which will get replayed upon write-quit
+    -
+        header: Interactive Rebase Commit Options
+        textClass: white
+        bullets:
+            - p, pick = use commit
+            - r, reword = use commit, but edit the commit message
+            - e, edit = use commit, but stop for amending
+            - s, squash = use commit, but meld into previous commit
+            - f, fixup = like "squash", but discard this commit's log message
+            - x, exec = run command (the rest of the line) using shell
+            - d, drop = remove commit
+            - Or, remove the commit altogether
+    -
+        header: WARNING
+        textClass: scary
+        text: >
+            Squashing commits that have already been published to remote branches of any kind will likely end in sorrow.
+
+            Be very careful with which commits you are interactively rebasing.
+    -
+        header: Commit Messages
+        textClass: blue
+        thread: start
+        bullets:
+            - Comments are removed
+            - Line 1 is a summary, and should be roughly <= 60 chars
+            - Line 2 needs to be blank to terminate the summary
+            - After that be concise, helpful to yourself and others but thorough
+            - You are describing the intent, effect, goals, etc. of the changes, not replacing the patch view
+    -
+        header: Good Commit Message Example
+        code: |
+            Added q parameter to search
+
+            - new parameter supported under /search
+            - new elements in returned JSON
+            - removed that crap the other guy left commented out
+    -
+        header: Bad Commit Message Example
+        code: |
+            More s!@#t that I have wanted to do for a long time but was flummoxed by that little red-haired punk
+    -
+        header: Stay on Target, but if you don't, we can deal with that too
+        thread: start
+        textClass: yellow
+        bullets:
+            - Sometimes I start mixing in unrelated changes onto a feature branch.  No problem.
+            - You can edit commits to move changes from one commit to another.
+            - You can duplicate a branches commits and then remove the wrong set from each branch.
+            - Show that.
+    -
+        header: Clean it up before publishing
+        textClass: yellow
+        bullets:
+            - Good Habits
+            - Rebase early and often
+            - Use squashing and upstream rebasing to make one commit per unit-of-work with a useful message before pushing 
+    -
+        header: Worst case assembling changes
+        textClass: yellow
+        bullets:
+            - You can merge changes one section at a time if you have the right tools to visualize differences
+            - diff vs difftool

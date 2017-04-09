@@ -1,0 +1,230 @@
+---
+title: Getting Started with Docker On a Mac
+subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2015
+tldr: I got Docker, etc. running on my Mac, as seen here: <a target="_blank" href="https://docs.docker.com/installation/mac/">https://docs.docker.com/installation/mac/</a><p> Docker is useful.
+contents:
+   - Call Tactics
+   - Install Docker Toolbox
+   - Verify the Install
+   - Pull and Create Images, Run Containers
+   - Create Dockerfiles
+   - Why Containers? Why Docker? What about Virtual Machines?
+slides:
+   -
+      thread: start
+      header: Other Things You Will See
+      textClass: yellow
+      bullets:
+         - YAML to JSON to <a target="_blank" href="http://impress.github.io/impress.js">impress.js</a>
+         - Running multiple versions of Elasticsearch (hopefully)
+         - iTerm, with Powerline-enabled fonts, running the Fish shell
+         - MacVim
+         - ssh port-forwarding
+         - Somebody with no visual design skills using random highlighter colors
+         - Me bumbling around in the shell, needing help from my Friends
+   -
+      thread: start
+      header: Things You Not Will See
+      textClass: blue
+      bullets:
+         - Linking containers together
+         - Managing sets of related containers
+         - Publishing to a private repository
+      text: >
+         Hopefully somebody will volunteer to show those things soon.
+   -
+      thread: start
+      textClass: green
+      text: >
+         My first attempt used the old way, via <white>boot2docker</white>.<p>
+         Now you can simply download the docker toolbox from <a target="_blank" href="https://docs.docker.com/installation/mac/">https://www.docker.com/toolbox</a>.<p>
+         This provides the Docker Client, Machine, VirtualBox and more tools outside our scope for today.<p>
+         Both methods utilize VirtualBox to run a Linux VM as the docker host.
+   -
+      textClass: pink
+      text: >
+         WARNING: The Docker toolbox installed VirtualBox 5.x, which my existing vagrant did not seem to like.  I <code> brew cask install virtualbox </code> which installed 4.3.x.  I also had to <code>rm -fr .vagrant</code> in my vagrant directories.  Hopefully things work again.
+   -
+      textClass: green
+      text: >
+         The download is a <a target="_blank" href="https://en.wikipedia.org/wiki/Installer_(OS_X)#Installer_package">standard Mac package (.pkg) file</a>: just double-click it to start the install.<p>
+         FWIW, it offered to migrate my boot2docker-hosted containers over to the new docker-machine, and it seems to have worked just fine.
+   -
+      textClass: green
+      text: >
+         Just following the instructions you run <code>/Applications/Docker/Docker Quickstart Terminal</code>Or, from any terminal program like iTerm, <code>docker-machine start default</code>
+   -
+      textClass: green
+      text: >
+         Then, if you are using the fish shell: <code>eval (docker-machine env default)</code>
+         Or, in bash: <code>eval `docker-machine env default`</code>
+   -
+      textClass: green
+      text: >
+         You know it's working when you can
+         <code>docker info</code>
+         and
+         <code>docker run hello-world</code>
+         And, more interestingly,<p>
+         <code>docker run -i -t ubuntu /bin/bash</code>
+         And then, to show some of the differences with a VM,
+         <code>ps -ef</code>
+   -
+      thread: start
+      textClass: orange
+      text: Dockerfiles are to Docker what <a target="_blank" href="http://docs.ansible.com/ansible/playbooks.html">playbooks are to Ansible</a><p>That is, you specify what needs to happen in order to correctly construct a machine image.
+   -
+      textClass: orange
+      text: >
+         Dockerfiles use directives to define <white>"images"</white><p>
+         Images are cloned to create <white>"containers"</white> in which things run.
+   -
+      textClass: orange
+      text: >
+         The first directive is <green>FROM</green>, which specifies the parent image (essentially, all images have a parent image):
+         <code>FROM ubuntu</code>
+         Images are, if necessary, downloaded from a public or private registry.<p>
+   -
+      textClass: orange
+      text: >
+         The next most common directive is <green>RUN</green>, which does exactly what you would think:
+            <code> RUN apt-get update -y </code>
+         That will tell the Debian package manager to update all packages and assume we said "Yes" to every question
+   -
+      textClass: orange
+      text: >
+         Installing another useful package:
+            <code> RUN apt-get install lsof -y </code>
+   -
+      textClass: orange
+      text: >
+         A example using a publically available Centos image:
+         <code>
+         FROM centos<br>
+         RUN yum update -y<br>
+         RUN yum install lsof -y
+         </code>
+   -
+      textClass: orange
+      text: >
+         Adding the <green>MAINTAINER</green> directive reminds you who created this mess:
+         <code>
+         FROM centos<br>
+         MAINTAINER AFC email: cohana@avalonconsult.com<br>
+         RUN yum update -y<br>
+         RUN yum install lsof -y<br>
+         </code>
+   -
+      textClass: orange
+      text: >
+         Once you have a Dockerfile, you build a local image from it e.g.<p>
+         <code>
+         docker build --rm -t centos-demo docker-centos
+         </code>
+         or,
+         <code>
+          cd docker-elasticsearch-0.90.13; and docker build --rm -t elastic-0.90 .
+         </code>
+   -
+      textClass: orange
+      text: >
+         Use <code>docker images</code> to see what you have in your local repository. Notice the unnamed ones.<p>
+         Use <code>docker rmi centos-demo</code> to clean up your mess.
+   -
+      textClass: orange
+      text: >
+          Containers are often used in <a target="_blank" href="http://martinfowler.com/articles/microservices.html">micro-service architectures</a> and <a target="_blank" href="http://12factor.net/">12-factor applications</a> in which each component exposes a narrowly-scoped service on a single port.<p>
+          In fact, as we will see later, services that are NOT designed this way may not be usable within Docker containers.
+   -
+      textClass: orange
+      text: >
+          In the dockerfile, you expose the port(s) the application will listen on via <white>EXPOSE</white><br>
+          <white>ENTRYPOINT</white> is the program you want to start in the container.<br>
+          <white>CMD</white> is the array of arguments you want to pass to that program.
+          <small>See the <a target="_blank" href="https://docs.docker.com/reference/builder/">Dockerfile Reference</a> for more on how to run things.</small>
+          <code><pre>
+            EXPOSE 9200
+            ENTRYPOINT [ "/u/s/e/bin/elasticsearch" ]
+            CMD ["-f"]
+          </pre></code>
+   -
+      thread: start
+      textClass: blue
+      text: >
+         An actual docker file running Elasticsearch 0.90.13:
+         <code><pre>
+            FROM ubuntu
+            MAINTAINER Andy Cohan email: cohana@avalonconsult.com
+            ENV DEBIAN_FRONTEND noninteractive
+            RUN apt-get update -y
+            RUN apt-get install software-properties-common -y
+            RUN add-apt-repository ppa:webupd8team/java
+            RUN apt-get update -y
+
+            RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+            RUN apt-get install oracle-java7-set-default -y
+
+            ADD elasticsearch-0.90.13.deb /tmp/
+            RUN dpkg -i /tmp/elasticsearch-0.90.13.deb
+
+            EXPOSE 9200
+            ENTRYPOINT [ "/usr/share/elasticsearch/bin/elasticsearch" ]
+            CMD ["-f"]
+         </pre></code>
+   -
+      textClass: blue
+      text: >
+         Before running it normllay, let's poke around in it a bit by overriding the entrypoint:<p>
+         <code>docker run -i --entrypoint=/bin/bash -t elastic-0.90</code>
+   -
+      textClass: blue
+      text: >
+         And to run it for real
+         <code>docker run -p 9201:9200 -t elastic-0.90</code>
+         and using <code>docker ps</code> to see it running.
+   -
+      textClass: blue
+      text: >
+         Now, I started this whole thing not only to help familiarize myself with Docker, but to figure out how to migrate indexes from Elasticsearch 0.90.13 to 1.7, as a prospect of ours wants to do.<p>
+         Right about here is where I, flush with success running Elasticsearch 0.90.13 in a container, copy/added an image to run Elasticsearch 1.7.  <pink>Things did not go well<pink>...<p>More on this later.
+   -
+      textClass: blue
+      text: Running <code>docker ps -a</code> shows you <green>ALL</green> containers, not just running ones
+   -
+      textClass: blue
+      text: >
+         Elasticsearch listens on <white>9200</white> by default.<br>
+         We have mapped that to <white>9201</white> as seen outside the container, but we still cannot reach it since the "outside" in our case is the Linux VM host.<p>
+         <pink>SSH</pink> to the rescue!<p>
+         We port forward port 9201 from the docker host to our mac via
+         <code>docker-machine ssh default -- -vnNTL '*:9201:localhost:9201'</code>
+   -
+      textClass: blue
+      text: '<img src="DockerPortMapping1.png">'
+   -
+      textClass: blue
+      text: 'And, the original plan was to stand up 2 containers, like this:<p><img src="DockerPortMapping2.png">'
+   -
+      thread: start
+      textClass: white
+      text: >
+         Not every program seems well-suited for running in containers, as Docker overrides /sbin/init in the container, making programs that rely on /etc/init.d/ scripts problematic<p>
+         You might be able to use phusion/baseimage @ <a target="_blank" href="http://phusion.github.io/baseimage-docker/">http://phusion.github.io/baseimage-docker/</a>.  That image contains a custom init that starts many of the Linux services many applications need, but it did not work with Elasticsearch 1.7
+   -
+      textClass: white
+      text: >
+         Back to containers and virtual machines: what exactly is a container anyway? <small>(Sean?)</small><p>
+         See <a target="_blank" href="http://www.datamation.com/data-center/virtualization-vs.-containers-what-you-need-to-know.html">this</a> for more info.
+      bullets:
+         - Containers are not new; Docker is new.  And <a target="_blank" href="http://www.infoworld.com/article/2917589/application-virtualization/coreoss-docker-rival-gets-support-from-google-and-other-container-mavens.html">Rocket</a> is new.
+         - Solaris has had containers since 2004
+         - Containers are like chroot (circa 1982) on steriods
+         - You do NOT have to choose between containers and virtual machines; they coexist very nicely and serve different, overlapping but complementary purposes
+         - Unlike virtual machines, containers impose little overhead, as they are do not implement OS emulation
+   -
+      textClass: white
+      bullets:
+         - Containers provide process isolation
+         - Containers provide easy deployment and migration
+         - You can run many containers on a single VM, each with different package, etc. dependencies but common files,e tc. are shared
+         - Containers are especially good for DEV and TEST environments, where rapid re-provisioning can make a huge idfference

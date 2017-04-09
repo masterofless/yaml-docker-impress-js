@@ -1,0 +1,53 @@
+---
+title: 'Red-Green-Refactor: How Test-Driven Development Improves the Lives of Everyone'
+tldr: Using test-driven development at a variety of levels provides more clarity, alignment, quality, and gets more done in less time and risk than other ways.
+slides:
+  -
+    header: What is Test-Driven Development
+    thread: start
+  -
+    header: Basically, we write the test first
+  -
+    header: What Do We Test For?
+    text: >
+      Too often, discussions about what to test descend into arguments about what the labels for various kinds of testing are:
+        - Unit testing
+        - Integration testing
+        - Performance testing
+        - Functional testing
+        - Load testing
+        - Interface testing
+        - Contract testing
+        - Stress testing
+        - Smoke testing
+  -
+    header: We should test for anything that the business cares about, and that the developers know can go wrong
+      - Acceptance testing is expressed in terms the Product Owner and stakeholders probably understand
+      - Unit testing ensures the things developers depend on work as expected in perpetuity
+      - Integration testing assures the components interact as required when integrated
+  -
+    header: 'Fail Fast: Discover any issues as early and as quickly as possible'
+    text: >
+        This starts with the Definition of Done and Acceptance Criteria.  Formalizing these specifications as test drives the necessary communication between Product Owners and development teams
+  -
+    header: What Tests Get Written First?
+    bullets:
+      - Definition of Done
+        - Code Quality
+      - Feature Requirements
+  -
+    header: That Sounds Like More Work
+    thread: start
+  -
+    header: 'Remember the Prime Directive: Implement features the business needs'
+    bullets:
+          1. The existing system continues to work as is
+          2. We minimize the time between conception and value-delivery, over the long-term
+  - header: Many Developers Hate This at First
+        text: >
+          There is always a trade-off between power and complexity.  By investing in the test automation at the beginning, you accept a little extra work at the beginning of the project for expedited delivery and better quality in the long-term
+  -
+    header: How does test-driven development increase quality?
+  -
+    header: How does test-driven development minimize time-to-value?
+      

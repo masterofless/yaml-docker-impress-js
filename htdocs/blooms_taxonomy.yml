@@ -1,0 +1,47 @@
+---
+-
+    title: The cognitive processes by which thinkers encounter and work with knowledge
+    bullets:
+        - Remember
+            - Recognizing
+            - Recalling
+        - Understand
+            - Interpreting
+            - Exemplifying
+            - Classifying
+            - Summarizing
+            - Inferring
+            - Comparing
+            - Explaining
+        - Apply
+            - Executing
+            - Implementing
+        - Analyze
+            - Differentiating
+            - Organizing
+            - Attributing
+        - Evaluate
+            - Checking
+            - Critiquing
+        - Create
+            - Generating
+            - Planning
+            - Producing
+-
+    title: the types of knowledge used in cognition:
+    bullets:
+        - Factual Knowledge
+            - Knowledge of terminology
+            - Knowledge of specific details and elements
+        - Conceptual Knowledge
+            - Knowledge of classifications and categories
+            - Knowledge of principles and generalizations
+            - Knowledge of theories, models, and structures
+        - Procedural Knowledge
+            - Knowledge of subject-specific skills and algorithms
+            - Knowledge of subject-specific techniques and methods
+            - Knowledge of criteria for determining when to use appropriate procedures
+        - Metacognitive Knowledge
+            - Strategic Knowledge
+            - Knowledge about cognitive tasks, including appropriate contextual and conditional knowledge
+            - Self-knowledge
