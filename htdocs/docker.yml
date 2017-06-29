@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Docker On a Mac - THIS IS NOW OUT OF DATE
 subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2015
-tldr: I got Docker, etc. running on my Mac, as seen here: <a target="_blank" href="https://docs.docker.com/installation/mac/">https://docs.docker.com/installation/mac/</a><p> Docker is useful.
+tldr: 'I got Docker, etc. running on my Mac, as seen here: <a target="_blank" href="https://docs.docker.com/installation/mac/">https://docs.docker.com/installation/mac/</a><p> Docker is useful.'
 contents:
    - Call Tactics
    - Install Docker Toolbox

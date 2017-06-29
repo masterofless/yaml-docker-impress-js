@@ -1,13 +1,17 @@
 #!/bin/bash -eu
 
 tag=yaml-presents
-port=8888
+hostport=8888
 
 set -x
 
+docker kill $tag || true
+docker rm $tag || true
+
 docker build -t $tag .
 
-docker run --detach --rm --name $tag -p ${port}:80 -v ${PWD}/htdocs:/usr/local/apache2/htdocs $tag && \
-sleep 1
+docker run --detach --rm --name $tag -p ${hostport}:80 $tag && sleep 1
 
-open http://localhost:$port/
+open -a Firefox http://localhost:$hostport/presos/ || true
+
+docker logs $tag

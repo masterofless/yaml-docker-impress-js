@@ -3,75 +3,75 @@ title: Continuous Integration, Delivery, and Deployment
 subtitle: Andy Cohan<br><a target="_blank" href="http://avalonconsult.com/">Avalon Consulting, LLC</a><br>2016
 tldr: CI practices are helpful but require investment and alignment
 contents:
-  - Overview
-  - Terms
-  - Key Activities and Technologies
-  - QA is Critical
-  - The Last Mile
+    - Overview
+    - Terms
+    - Key Activities and Technologies
+    - QA is Critical
+    - The Last Mile
 slides:
-  -
-    thread: start
-    header: Overview
-    textClass: green
-    text: >
-      Continuous Integration, Deployment and Delivery ("CI/CD") refer to a range of tools and practices all targeted toward the automation of software testing, integration, assembly and deployment.
-      Like iterative, "Agile" development activities, CI/CD executes the same well-defined processes over and over and over again via automation and cluster computing.
-      The over-arching goal is to increase the validated quality of, and reduce the time-to-value for, any desirable change made to a system.
-  -
-    thread: start
-    header: Term Definitions
-    textClass: white
-    text: >
-      These terms are not precise and practices are not mutually exclusive to one or the other.  The critical pivot point most enterprises have not yet gotten past is the automated deployment to *production* environments.
-    bullets:
-      - Continuous Integration (CI) is the automation of software building and testing from the earliest point in the software life cycle through thorough testing of the software and/or services in question
-      - Continuous Delivery extends Continuous Integration and refers to the automation of creating production-ready deployment artifacts for a system or component, but not going the last mile to deploy to production
-      - Continuous Deployment refers to a range of processes that automatically deploy and monitor runtime components
-      - The key concept is of a *pipeline* that flows changes through a series of sluices and gates that each verify aspects of the overall system
-  -
-    thread: start
-    header: Key Activities and Technologies
-    textClass: yellow
-    bullets:
-      - Acceptance Criteria Driven Development
-      - Version Control
-      - Build Automation
-      - Test Automation
-      - Virtualized Compute Infrastructure
--
-    header: Wikipedia Benefits
-    bullets:
-      - Accelerated Time to Market: CD lets an organization deliver the business value inherent in new software releases to customers more quickly This capability helps the company stay a step ahead of the competition, in today’s competitive economic environment.
-      - Building the Right Product: Frequent releases let the application development teams obtain user feedback more quickly. This lets them work on only the useful features. If they find that a feature isn’t useful, they spend no further effort on it. This helps them build the right product.
-      - Improved Productivity and Efficiency: Significant time savings for developers, testers, operations engineers, etc. through automation.
-      - Reliable Releases: The risks associated with a release have significantly decreased, and the release process has become more reliable. With CD, the deployment process and scripts are tested repeatedly before deployment to production. So, most errors in the deployment process and scripts have already been discovered. With more frequent releases, the number of code changes in each release decreases. This makes finding and fixing any problems that do occur easier, reducing the time in which they have an impact.
-      - Improved Product Quality: The number of open bugs and production incidents has decreased significantly.
-      - Improved Customer Satisfaction: A higher level of customer satisfaction is achieved.
-
-  thread: start
-  header: QA is Critical
-  textClass: blue
-    text: >
-      Test engineering and execution is critical to a successful CI/CD operation
-  bullets:
-    - You must be able to *quickly* build the software to a known state of quality.  Manual testing is the exact antithesis of this principle and should be absolutely eliminated as much as possible.
-    - You must be able to test the right things at the right time, and *NOT* the wrong things at the wrong time.  Failure to do so costs time, money, and has high risks.
-    - You must automate:
-        - Unit tests
-        - Functional acceptance tests
-        - System integration tests
-    - You should automate
-        - Code coverage analysis
-        - Code quality analysis
-        - Performance tests
--
-  thread: start
-  header: The Last mile
-  textClass: blue
-    text: >
-      Most enterprises do *not* automatically deploy artifacts into production, but more do all the time, including some of the biggest applications on the planet.
-      In order to cross this last gap, a system's architecture *must* be designed for this type of deployment.  Monolithic systems, unless they are entireally batch oriented, are not good candidates.
-    In fact, any system with a single point-of-failure won't work.  Some critical aspects of suitable architectures are:
-  bullets:
-    - Component-ized services with versioned interfaces wh TODO FINISH THIS
+    -
+        thread: start
+        header: Overview
+        textClass: green
+        text: >
+            Continuous Integration, Deployment and Delivery ("CI/CD") refer to a range of tools and practices all targeted toward the automation of software testing, integration, assembly and deployment.
+            Like iterative, "Agile" development activities, CI/CD executes the same well-defined processes over and over and over again via automation and cluster computing.
+            The over-arching goal is to increase the validated quality of, and reduce the time-to-value for, any desirable change made to a system.
+    -
+        thread: start
+        header: Term Definitions
+        textClass: white
+        text: >
+            These terms are not precise and practices are not mutually exclusive to one or the other.  The critical pivot point most enterprises have not yet gotten past is the automated deployment to *production* environments.
+        bullets:
+            - Continuous Integration (CI) is the automation of software building and testing from the earliest point in the software life cycle through thorough testing of the software and/or services in question
+            - Continuous Delivery extends Continuous Integration and refers to the automation of creating production-ready deployment artifacts for a system or component, but not going the last mile to deploy to production
+            - Continuous Deployment refers to a range of processes that automatically deploy and monitor runtime components
+            - The key concept is of a *pipeline* that flows changes through a series of sluices and gates that each verify aspects of the overall system
+    -
+        thread: start
+        header: Key Activities and Technologies
+        textClass: yellow
+        bullets:
+            - Acceptance Criteria Driven Development
+            - Version Control
+            - Build Automation
+            - Test Automation
+            - Virtualized Compute Infrastructure
+    -
+        header: Wikipedia Benefits
+        bullets:
+            - Accelerated Time to Market: CD lets an organization deliver the business value inherent in new software releases to customers more quickly This capability helps the company stay a step ahead of the competition, in today’s competitive economic environment.
+            - Building the Right Product: Frequent releases let the application development teams obtain user feedback more quickly. This lets them work on only the useful features. If they find that a feature isn’t useful, they spend no further effort on it. This helps them build the right product.
+            - Improved Productivity and Efficiency: Significant time savings for developers, testers, operations engineers, etc. through automation.
+            - Reliable Releases: The risks associated with a release have significantly decreased, and the release process has become more reliable. With CD, the deployment process and scripts are tested repeatedly before deployment to production. So, most errors in the deployment process and scripts have already been discovered. With more frequent releases, the number of code changes in each release decreases. This makes finding and fixing any problems that do occur easier, reducing the time in which they have an impact.
+            - Improved Product Quality: The number of open bugs and production incidents has decreased significantly.
+            - Improved Customer Satisfaction: A higher level of customer satisfaction is achieved.
+    -
+        thread: start
+        header: QA is Critical
+        textClass: blue
+        text: >
+            Test engineering and execution is critical to a successful CI/CD operation
+        bullets:
+            - You must be able to *quickly* build the software to a known state of quality.  Manual testing is the exact antithesis of this principle and should be absolutely eliminated as much as possible.
+            - You must be able to test the right things at the right time, and *NOT* the wrong things at the wrong time.  Failure to do so costs time, money, and has high risks.
+            - You must automate:
+            - Unit tests
+            - Functional acceptance tests
+            - System integration tests
+            - You should automate
+            - Code coverage analysis
+            - Code quality analysis
+            - Performance tests
+    -
+        thread: start
+        header: The Last mile
+        textClass: blue
+        text: >
+            Most enterprises do *not* automatically deploy artifacts into production, but more do all the time, including some of the biggest applications on the planet.
+            In order to cross this last gap, a system's architecture *must* be designed for this type of deployment.  Monolithic systems, unless they are entireally batch oriented, are not good candidates.
+            In fact, any system with a single point-of-failure won't work.  Some critical aspects of suitable architectures are:
+        bullets:
+            - Component-ized services with versioned interfaces wh TODO FINISH THIS
 

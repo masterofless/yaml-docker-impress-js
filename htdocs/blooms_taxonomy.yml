@@ -1,6 +1,9 @@
 ---
--
+title: Blooms Taxonomy
+slides:
+  -
     title: The cognitive processes by which thinkers encounter and work with knowledge
+    thread: start
     bullets:
         - Remember
             - Recognizing
@@ -27,8 +30,8 @@
             - Generating
             - Planning
             - Producing
--
-    title: the types of knowledge used in cognition:
+  -
+    title: Types of Knowledge Used in Cognition
     bullets:
         - Factual Knowledge
             - Knowledge of terminology

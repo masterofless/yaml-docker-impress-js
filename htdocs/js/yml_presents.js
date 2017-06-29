@@ -71,6 +71,9 @@ function getSpindleMarkup(spindle) {
       if (slide.header) {
         html = '<h2 class="' + randomColor() + '">' + slide.header + '</h2>';
       }
+      if (slide.subHeader) {
+        html = '<h4 class="' + randomColor() + '">' + slide.subHeader + '</h4>';
+      }
       var color = slide.textClass || "white";
       if (slide.text) {
         html = html.concat('<div class="text">' + slide.text + '</div>');
@@ -151,8 +154,6 @@ function getPresoAsSpindle(preso) {
   return spindle;
 }
 
-function getSlidesMarkup(ymlData, xPixels, yPixels) {
-  var YAML = window.YAML;
-  var preso = YAML.parse(ymlData);
-  return getSpindleMarkup(getPresoAsSpindle(preso));
+function getSlidesMarkup(presoData, xPixels, yPixels) {
+  return getSpindleMarkup(getPresoAsSpindle(presoData));
 }

@@ -44,7 +44,7 @@ slides:
           1. The existing system continues to work as is
           2. We minimize the time between conception and value-delivery, over the long-term
   - header: Many Developers Hate This at First
-        text: >
+    text: >
           There is always a trade-off between power and complexity.  By investing in the test automation at the beginning, you accept a little extra work at the beginning of the project for expedited delivery and better quality in the long-term
   -
     header: How does test-driven development increase quality?

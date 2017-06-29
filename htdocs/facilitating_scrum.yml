@@ -1,0 +1,378 @@
+---
+title: Facilitating Scrum
+subtitle: Making Everything Easier and More Fun
+tldr: Doing Scrum rightly requires knowing exactly what it is, how to effectively facilitate meetings, and how to handle all the missing pieces
+slides:
+    -
+        header: Goals for This Presentation
+        bullets:
+            - To Inform, Perhaps Even to Educate
+            - Explain why effective meeting facilitation is important
+            - Identify how we can get better at executing our work through facilitating effective Scrum meetings
+            - To Demonstrate, to *entertain*, and to Learn
+    -
+        header: Agenda
+        bullets:
+            - Scrum Refresher: Release good software faster, over and over again
+            - Meeting Facilitation Basics
+            - The intersection: facilitating Scrum and its ceremonies
+    -
+        header: Scrum Is Just One (very popular) Agile Methodology
+        textClass: orange
+        thread: start
+        bullets:
+            - Creating working software (or other bits) with every sprint
+            - A consistent "Definition of Done" that the product must maintain, and every that increment must meet
+            - 5 levels of planning
+            - Sprinting with 4 ceremonies
+            - 3 Roles
+            - 3 Artifacts
+    -
+        header: Scrum Is
+        textClass: orange
+            - Intensionally Lightweight
+            - Simple (but not trivial) to understand
+            - Difficult to master
+    -
+        header: Scrum is Not...
+        textClass: orange
+        bullets:
+            - A set of tools
+            - A set of mandates
+            - Failing to plan
+            - Not doing estimates
+            - Failing to prioritize
+            - A daily meeting
+    -
+        header: Scrum Includes 5 Levels of Planning
+        textClass: orange
+        bullets:
+            - Product Visioning
+            - Product Road Mapping
+            - Release Planning
+            - Sprint Planning
+            - Daily Planning
+    -
+        header: Scrum Includes 3 Team Roles
+        textClass: orange
+        bullets:
+            - Scrum Master
+            - Product Owner
+            - Development Team Member
+    -
+        header: Scrum Includes 3 Artifacts
+        textClass: orange
+        bullets:
+            - Product Backlog
+            - Sprint Backlog
+            - Product Increment
+    -
+        header: Scrum Includes 1 Shared Definition of Done
+        textClass: orange
+        bullets:
+            - Working builds and tests
+            - Quality metrics including code complexity, test coverage, latency, etc.
+            - Demonstrable results
+    -
+        header: Scrum Includes 4 Ceremonies
+        textClass: orange
+        bullets:
+            - Sprint Planning
+            - Daily Standup
+            - Sprint Review
+            - Retrospective
+    -
+        thread: start
+        header: Before We Dive In
+        subheader: Why Effective Meeting Facilitation Is Important
+        text: >
+            Many of you might not facilitate meetings often, others may already know all of this stuff and do it very well.  Even if so, I bet you'd admit that you *could* do it better more often than not.  I know I do.
+            Hopefully there will be a nugget or two in here that resonates for you.
+            Also, think of this as a superset of things to do for all meetings; no meeting uses all techniques.
+    -
+        header: Poorly-managed meetings *suck* for everyone involved
+        bullets:
+            - Including non-present stakeholders, after all, our time is their money
+            - They waste time, accomplishing little or no actual business value
+            - They drain people's energy and create frustration
+            - They *deter* real participation in the desired outcomes, for present and future meetings
+    -
+        header: Well-managed meetings are effective, they feel good, and they are a lot more fun
+        bullets:
+            - They are far more likely to achieve immediate, tangible, positive results
+            - They are more efficient, using less time and money for similar or better results
+            - Create positive energy for the participants as they feel impactful, respected and valued
+            - They reinforce a sense of contributing to something larger than oneself
+    -
+        header: How to Have Effective Meetings
+        bullets:
+            - 0. Set Goals
+            - 1. Plan the Meeting
+            - 2. Inform
+            - 3. Prepare
+            - 4. Structure and Control
+            - 5. Summarize and Record
+    -
+        header: "Plan: Get Clear on the Goal(s): Why"
+        bullets:
+            - A meeting with no goal is just a discussion.  At a formal meeting, discussion is a means, not an end in itself.
+            - Think through what it is really needs to be accomplished and what *you* are really trying to accomplish
+            - Perhaps you mean "To Inform", "To Understand", or "To Align", "To Decide", "To Learn" rather than "To Discuss"
+            - Maybe you don't even need to have a meeting.  Will a simple email suffice?  Perhaps just an impromptu visit or two?
+            - Even small meetings, especially standing/regular ones, are fairly heavy-weight; think about whether you can achieve the goal in a better/faster/cheaper way.
+    -
+        header: Well-crafted meeting goals
+        bullets:
+            - Specific, clear and concise
+            - Relevant and meaningful to attendees
+            - Assessable at meeting's end
+            - Achievable
+    -
+        header: "Plan: Get Clear on the Agenda: What"
+        bullets:
+            - An agenda is not a substitute for a goal(s)
+            - An agenda is the content the team needs to cover in order to reach the goal(s)
+            - Use a logical sequence for the goal(s), attendees, time frame
+            - Agenda topics *might need to be time-boxed* to ensure the overall goal(s) is met
+            - Allocate time based on importance, not urgency
+            - Ensure there is enough time to accomplish the goals with the attendees
+    -
+        header: " Plan: Have Just the Right People"
+        bullets:
+            - Invite all the people, and *only* those people, actually required to meet the goal
+            - Limit the number of people to the essentials.  We all have a need to be understood, so the time necessary to conduct any amount of business effectively goes up with every additional person.
+            - If any of the required people cannot make it, seriously consider postponing it.  But, perhaps they are NOT so required...
+    -
+        header: "Plan: Do Not Have A Meeting If You Should Not or Do Not Need One"
+        bullets:
+            - Some meetings, especially with a goal of "to inform" might be better as a simple email, or a few informal discussions
+            - Any time the information flow is essentially one direction, that is a good candidate for an email (unless there are likely to be emotional reactions to the information)
+    -
+        header: "Inform Effectively: Communicate Concisely, Thoroughly"
+        bullets:
+            - Make sure all the attendees, plus any other critical stakeholders, know the goals and the agenda
+            - Anticipate needs and issues and provide or mitigate
+            - Identify clearly what prerequisites attendees should accomplish and/or what they need to bring with them
+    -
+        header: "Structure and Control: Facilitate Effectively in the Moment"
+        bullets:
+            - Get there early enough to get set up and ensure everything you need is there and working
+            - Start on time, or just a *little* fashionably late, once a quorum is present
+            - Keep time and stick the agenda
+            - Normally, whoever called a meeting facilitates it, but often that is not true, nor necessary
+            - Facilitators participate as well more often than not, but if the meeting is large enough, that may be difficult.  A different facilitator may be utilized by the meeting sponsor so she can more fully participate without distraction or domination
+            - What do you do when no quorum arrives on time?
+    -
+        header: "Structure and Control: Establish and Stick to Ground Rules"
+        subheader: "Identify the importance of and encourage:"
+        bullets:
+            - Open-ness
+            - Safety
+            - Respect
+            - Participation
+            - Focus
+    -
+        header: "Structure and Control: Establish and Stick to Ground Rules"
+        subheader: "As necessary, establish ground rules for the meeting e.g.:"
+        bullets:
+            - Use of screens
+            - Letting people finish
+            - Respect time-boxing
+            - Parking lot tangents
+    -
+        header: "Structure and Control: Somebody Probably Has to Scribe"
+        bullets:
+            - Most meetings, even many short stand-ups, need someone to write down any decisions, action items, etc.
+            - The facilitator should be responsible for doing it, or assigning somebody else to do it
+    -
+        header: "Structure and Control: Make Sure Everyone Knows Each Other"
+        subheader: "Trust is the critical glue of the universe, and you cannot really trust someone you do not know"
+        bullets:
+            - For normal meetings, between 3 and 20 people, everyone should know each other's first name and enough about their role to understand why they are at the meeting
+            - The more divergent the opinions, background, and knowledge of the topic areas of the participants, the more important this is
+            - Larger meetings are more likely Presentations which is a different topic
+    -
+        header: "Structure and Control: Choose a Structure"
+        subheader: Standing meetings often already have well-defined goals, topics areas AND structure.  When decisions need to be made, use a sequence resembling
+        bullets:
+            - 1. Evidence
+            - 2. Interpretation
+            - 3. Action
+            - 'When problem-solving, consider frameworks such as "5 Whys"'
+    -
+        header: "Structure and Control: Important Concentrations"
+        subheader: Unite
+        bullets:
+            - Let off the steam
+            - Don't take sides
+            - Bring in the non-combatants
+            - Stick to facts
+    -
+        header: "Structure and Control: Important Concentrations"
+        subheader: Focus
+        bullets:
+            - Stay alert and watch out for irrelevant contributions
+            - Keep a hand on the wheel
+            - Test comprehension
+            - Paraphrase and check back
+    -
+        header: "Structure and Control: Important Concentrations"
+        subheader: Mobilize
+        bullets:
+            - Protect the weak and keep the strong under control
+            - Check around the group and collect all contributions
+            - Record all suggestions to avoid losing good points
+            - Build up ideas, don't know them down
+    -
+        header: "Structure and Control: Consider the Participants Social Styles"
+        bullets:
+            - Driver/Dominant
+            - Social
+            - Expressive/Amiable
+            - Analytical
+    -
+        header: "Structure and Control: Consider the Participants Learning Styles"
+        bullets:
+            - Visual/spatial
+            - Aural/auditory
+            - Verbal/linguistic
+            - Physical/kinesthetic
+            - Logical/Mathematical
+            - Social/interpersonal
+            - Solitary/intra-personal
+    -
+        header: "Structure and Control: Manage Group and Individual Dynamics"
+        bullets:
+            - Ensure participants have a chance to, are encouraged to, get their thoughts heard by the whole group
+            - Ensure individuals do not over-dominate the discussion time
+    -
+        header: "Structure and Control: Be Focused First, Flexible Second"
+        subheader: "Focus on achieving the goal(s), but:"
+        bullets:
+            - Sometimes the attendees realize there is a better goal, or that the goal cannot yet be achieved without other prerequisites being met
+            - Be open to the group figuring out it needs to change course
+            - Avoid retracing old ground
+    -
+        header: "Structure and Control: Be Creative"
+        subheader: "Try and find ways to create fun and engagement.  Consider using alternatives to a standard discussion format such as:"
+        bullets:
+            - Role playing
+            - Brainstorming
+            - Mind mapping
+            - Scenario building
+            - Round robin
+            - Root cause analysis techniques
+    -
+        header: "Structure and Control: Use a Parking Lot for Significant Tangents"
+        text: >
+            Often people identify topics/issues they want to discuss but that are outside the scope established by the goals of the meeting.
+            A visible Parking Lot can be used to record topics that were identified but will not be covered in the meeting.
+            Whiteboards or a paper easel are good for these items.
+            Any Parking Lot items should be dispositioned at the end of, or after, the meeting for follow-up.
+    -
+        header: "Summarize and Record: Articulate the Outcomes"
+        subheader: "Before time runs out on a meeting, articulate the results you understood"
+        bullets:
+            - Outcomes
+            - Decisions
+            - Action Items with assignments
+            - Include plans, or not, to handle Parking Lot items
+            - If there is any doubt about whether the goals were met, that should also be established
+    -
+        header: "Summarize and Record: Follow-Up in Writing"
+        text : >
+            Any significant outcomes, as well as useful notes, of the meeting should be emailed to all participants and any stakeholders in  those outcomes as soon as possible after the meeting
+    -
+        header: "Standing Meetings Are Easier, But No Different"
+        text: >
+            Frequently the goal(s) and agenda of standing meetings are already clearly defined and understood by the participants.
+            If so, there is no need to reiterate those every time.
+    -
+        header: "Some Important Psychological Truths to Keep In Mind"
+        bullets:
+            - Everyone has a need to feel understood
+            - Few people like unpleasant surprises, especially in group situations
+            - Some people are uncomfortable speaking in group situations
+            - Some participants may feel confused, inadequate, insecure, superior, etc.
+            - Everyone brings preconceptions about the goals, topics, and participants that unconsciously inhibit open-ness to other points of view
+            - Everyone brings their own predisposition to be positive or negative about *change*, which is what meetings are often about
+    -
+        header: "Restating"
+        bullets:
+            - 1. Plan, starting with clear, achievable goals
+            - 2. Inform the attendees and stakeholders
+            - 3. Prepare
+            - 4. Structure and Control, everybody likes fun
+            - 5. Summarize and Record, make sure it sticks
+    -
+        header: RAQs (Recently Asked Questions)
+        thread: start
+        bullets:
+            - How can you get started when you still have data quality issues?
+            - What if the client has no plan?
+            - What are the differences and overlaps in responsibility for the Scrum Master and Product Owner?
+            - What is the client's responsibility?
+            - What is the difference between Acceptance Criteria and the Definition of Done?
+            - What makes Sprint Zero different from other sprints?  How is it the same?
+            - What if the client doesn't want to Sprint, or sprint review, or standup, or?
+    -
+        header: Facilitating Sprint Planning
+        textClass: white
+        thread: start
+        bullets: 
+            - Set and align on Sprint goal(s)
+            - Figure out what can get done
+            - Figure out how the selected work can get done
+    -
+        header: Facilitating Daily Standups
+        textClass: white
+        bullets:
+            - Standup proper should be <= 15 minutes, focusing on the plans for the day
+            - Problem-solving and other activities should be left to *after* standup proper (but should be done ASAP)
+            - Standups are for the *team*.  Stakeholder are welcome, often invited, but should speak when asked questions
+            - Healthy teams surface substantial issues in open settings
+            - Avoid the obvious, the mechanical, the repetitive, the boring
+            - Often the most important parts are the conversations that happen just *after* standup
+            - Try to have everyone on level ground
+            - Virtually all standup conversation should be clearly focused on a specific backlog item that everyone there knows.  Chickens that don't know can ask questions aftwerwards
+            - Stay focused on exactly what you did yesterday (and this morning), what you *plan* on doing, *specifically*, today and tomorrow morning, and what if *anything* you might need from anyone else.  This includes not just what *area* you might be working in, but the actual hands-on thread-of-effort you are working *on*, and what *outcome* you are striving for today
+            - It is NOT a status report.  No task ETAs, no percentage complete, etc.
+            - Tie comments back to the Sprint Backlog Item, not just a task. A task is a *personal* framing of the sprint plan; the *backlog item* is the *shared* framing of the sprint plan
+    -
+        header: Facilitating Sprint Reviews
+        textClass: white
+        bullets:
+            - Stakeholders invited by the Product Owner; all stakeholders should be considered
+            - Product Owner demonstrates the product increment for review by all the attending Stakeholders
+            - The development team says what went well, what didn't, what was discovered, how things were solved, etc.
+            - The timeline, budget, context, and opportunities are reviewed and expectations are discussed and adjusted
+            - The backlog is reviewed and may be groomed as the group collaborates on what should be done next
+            - "The Product Owner explains what Product Backlog items have been Done and what has not been Done"
+    -
+        header: Sprint Review Agenda
+        textClass: white
+        bullets:
+            - Product Owner (or the development team): demonstrates the product increment
+            - Product Owner explains what Product Backlog items have been Done and what has not been Done
+            - Development team describes the Sprint: what went well, what didn't, what was discovered, how things were solved, etc.
+            - The timeline, budget, context, and opportunities are reviewed and expectations are discussed and adjusted
+            - The Prioritized Backlog is reviewed and may be groomed as the larger group collaborates on what should be done next
+    -
+        header: Facilitating Retrospectives
+        textClass: white
+        bullets:
+            - Examine the sprint with regards to people, relationships, process, and tools
+            - Identify and order the major items that went well and potential improvements
+            - Create a plan for implementing improvements to the way the Scrum Team does its work
+    -
+        header: "How Could This Presentation Be Better"
+        bullets:
+            - Things to amplify
+            - Things to reduce, avoid, eliminate
+    -
+        header: "Sources"
+        bullets:
+            - "Meetings Bloody Meetings"
+            - "More Bloody Meetings"
+            - "The Checklist Manifesto"
+            - Many more

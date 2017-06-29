@@ -13,10 +13,9 @@
 </head>
 <body>
    <div id="impress"> </div>
-   <script type="text/javascript" src="js/jquery.js"></script>
-   <script type="text/javascript" src="js/impress.js"></script>
-   <script type="text/javascript" src="js/yamltojson.js"></script>
-   <script type="text/javascript" src="js/yml_presents.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="impress.js"></script>
+   <script type="text/javascript" src="yml_presents.js"></script>
    <script type="text/javascript">
       function getParameterByName(name) {
          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -24,16 +23,16 @@
             results = regex.exec(location.search);
          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
-
       var xPixels = 1150;
       var yPixels = 600;
-      var yamlFilename = getParameterByName('preso') + ".yml";
+      var presoFilename = getParameterByName('preso') + ".json";
 
       $(document).ready(function() {
-         $.get(yamlFilename, function(ymlData) {
-            $("div#impress").append(getSlidesMarkup(ymlData, xPixels, yPixels));
+        console.log("Retrieving JSON from " + presoFilename);
+        $.get(presoFilename, function(presoData) {
+          $("div#impress").append(getSlidesMarkup(presoData, xPixels, yPixels));
             impress().init();
-         });
+        });
       });
    </script> 
 </body>

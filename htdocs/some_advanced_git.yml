@@ -40,7 +40,7 @@ slides:
             - lola
     -
         thread: start
-        header: Log: Viewing Commit Histories in Useful Formats
+        header: "Log: Viewing Commit Histories in Useful Formats"
         textClass: yellow
         bullets:
             - oneline
