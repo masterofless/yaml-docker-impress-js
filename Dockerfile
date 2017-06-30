@@ -17,7 +17,8 @@ COPY *.py /presos/
 
 COPY httpd-presos.conf /etc/httpd/conf.d/
 COPY htdocs/*.html /presos/
-COPY htdocs/js/*.js /presos/
+COPY htdocs/*.css /presos/
+COPY htdocs/*.js /presos/
 RUN chmod a+r /presos/*.js
 
 COPY htdocs/*.yml /presos/
