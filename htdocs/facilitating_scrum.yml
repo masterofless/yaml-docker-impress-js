@@ -17,6 +17,8 @@ slides:
             - Scrum Refresher
             - Meeting Facilitation Basics
             - The intersection: facilitating Scrum, its ceremonies, and its cadence
+        notes:
+            - "I will speed through many of the general facilitation slides; stop me if you want more"
     -
         header: Scrum Is Just One (very popular) Agile Methodology
         thread: start
@@ -65,17 +67,43 @@ slides:
         notes:
             - Long-range plans are optimally fully fleshed and manifest in a product backlog before Sprint 0 but hey
             - The 3 types of longer range planning are done in secondary meetings, too often skipped
+            - Show Braintrust pix
     -
         header: Scrum Includes 5 Ceremonies
         bullets:
-            - *Backlog Grooming*
+            - "*Backlog Grooming*"
             - Sprint Planning
             - Daily Standup
             - Sprint Review
             - Retrospective
-        note:
+        notes:
             - Backlog grooming is often omitted which is a fundamental cause of lost time and money
             - Backlog grooming can and should happen frequently, though *unnecessary* churn can cause big problems
+    -
+        header: Backlog Items
+        bullets:
+            - "Epics: Features too large to be implemented as a single story"
+            - "Stories: features e.g. As an &lt;actor&gt; I want to &lt;function&gt; so I can &lt;goal&gt;"
+            - "Spikes: time-boxed questions that need to be answered by the development team"
+            - "Quality Efforts: Refactoring, documentation, test writing, exploratory testing, etc."
+        notes:
+            - Incomplete technical debt items have a rust-like effect
+    -
+        header: Definition of Done
+        bullets:
+            - Often an undocumented, unshared, inconsistently understood and applied social contract
+            - Remains relatively consistent throughout a product's lifecycle
+            - Describes a static state of the quality of the code base e.g. test coverage, complexity, documentation
+            - Shops using CI/CD can automate much of this assessment and enforcement
+        notes:
+            - Hope that commitment to a code repo is a minimum
+            - Code reviews are often incorporated to improve the overall quality and maintainability of the code base; this often has a wonderful effect on the team being able to work together as well
+    -
+        header: Acceptance Criteria
+        bullets:
+            - One or more per backlog item
+            - Describes the systems response to an event
+            - Often uses "Given-When-Then" language
     -
         thread: start
         header: Why Effective Meeting Facilitation Is Important Period
@@ -84,6 +112,8 @@ slides:
             Many of you might not facilitate meetings often, others may already know all of this stuff and do it very well.  Even if so, I bet you'd admit that you *could* do it better more often than not.  I know I do.
             Hopefully there will be a nugget or two in here that resonates for you.
             Also, think of this as a superset of things to do for all meetings; no meeting uses all techniques.
+        notes:
+            - Meetings can be useless metawork, or productive and fun depending mostly on their effective facilitation before and in the moment
     -
         header: Why Effective Meeting Facilitation Is Important for Scrum
         bullets:
@@ -326,6 +356,7 @@ slides:
         thread: start
         header: Facilitating the Scrum Ceremonies
         bullets:
+            - Mostly up to the ScrumMaster, but the Product Owner and Development Team can and should assist
             - Reinforce the goals of each meeting
             - Relentlessly focus on adding features to working software, not how "done" we are
             - Remove any all barriers as quickly as possible, hopefully during the meeting
@@ -387,12 +418,12 @@ slides:
         header: RAQs (Recently Asked Questions)
         thread: start
         bullets:
+            - What makes Sprint Zero different from other sprints?  How is it the same?
             - How can you get started when you still have data quality issues?
             - What if the client has no plan?
             - What are the differences and overlaps in responsibility for the Scrum Master and Product Owner?
             - What is the client's responsibility?
             - What is the difference between Acceptance Criteria and the Definition of Done?
-            - What makes Sprint Zero different from other sprints?  How is it the same?
             - What if the client doesn't want to Sprint, or sprint review, or standup, or?
     -
         header: Sprint Zero
@@ -403,9 +434,8 @@ slides:
             - Difficult to demonstrate a working increment that meets business objectives, but not impossible
             - Use this time to educate and reinforce on the Scrumming to come
     -
-        header: Definition of Done
+        header: When the Client Doesn't Want This Stuff
         bullets:
-            - Remains relatively consistent throughout a product's lifecycle
-            - Describes a static state of the quality of the code base e.g. test coverage, complexity, do
-    -
-        header: Acceptance Criteria
+            - Agile and Scrum are usually all but unknown to clients.  If not, they probably overstate their understanding and adoption
+            - You cannot make them do what they will not do
+            - You can, however, ask good questions at the point of attack to help drive decisions towards identifying and achieving goals they are interested in
