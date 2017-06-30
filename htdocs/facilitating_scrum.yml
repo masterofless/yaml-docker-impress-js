@@ -30,6 +30,7 @@ slides:
     -
         header: Scrum Is
         textClass: orange
+        bullets:
             - Intensionally Lightweight
             - Simple (but not trivial) to understand
             - Difficult to master
