@@ -85,6 +85,10 @@ function getSpindleMarkup(spindle) {
       if (slide.code) {
         html = html.concat('<div class="code"><code>' + slide.code.replace("\n", "<br>") + '</code></div>');
       }
+      if (slide.notes) {
+         html = html.concat('<div class="notes"><ul><li>' +
+           slide.notes.join('</li><li>') + '</li></ul></div>');
+      }
       // console.log("main slideDiv call");
       strings.push(slideDiv(html, i + 1, platter.slides.length, j));
     });
@@ -135,7 +139,7 @@ function getPresoAsSpindle(preso) {
         spindle.platters.push({title: slide.thread, slides: [slide]});
         console.log("pushed slide " + slide.header + " onto NEW thread/platter " + platter.title);
         */
-        console.log("THIS should NOT happen");
+        console.log("No platter found for slide" + slide.header + "; THIS should NOT happen")
       }
     });
   }

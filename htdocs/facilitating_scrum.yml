@@ -1,102 +1,96 @@
 ---
-title: Facilitating Scrum
-subtitle: Making Everything Easier and More Fun
-tldr: Doing Scrum rightly requires knowing exactly what it is, how to effectively facilitate meetings, and how to handle all the missing pieces
+title: Facilitating Scrum Meetings
+tldr: Doing Scrum rightly requires knowing exactly what it is, how to effectively facilitate meetings, and how to handle all the missing pieces.  And like writing or prentation, facilitation is a core consulting craft skill and should be fiercely goal-driven.
 slides:
     -
         header: Goals for This Presentation
         bullets:
-            - To Inform, Perhaps Even to Educate
-            - Explain why effective meeting facilitation is important
-            - Identify how we can get better at executing our work through facilitating effective Scrum meetings
-            - To Demonstrate, to *entertain*, and to Learn
+            - To help us deliver better solutions to clients, and optimize their experience as we do it
+            - Explain how to more effectively facilitate Scrum ceremonies
+            - Explain how to use Scrum when the client really isn't
+        notes:
+            - Theme 1: Communications is key to managing expectations and therefore to happiness
+            - Theme 2: Planning can and should be very lightweight, but is nonetheless essential to software development
     -
         header: Agenda
         bullets:
-            - Scrum Refresher: Release good software faster, over and over again
+            - Scrum Refresher
             - Meeting Facilitation Basics
-            - The intersection: facilitating Scrum and its ceremonies
+            - The intersection: facilitating Scrum, its ceremonies, and its cadence
     -
         header: Scrum Is Just One (very popular) Agile Methodology
-        textClass: orange
         thread: start
         bullets:
-            - Creating working software (or other bits) with every sprint
+            - Creating working software of reliable quality with every sprint
             - A consistent "Definition of Done" that the product must maintain, and every that increment must meet
             - 5 levels of planning
-            - Sprinting with 4 ceremonies
+            - Sprinting with 5 ceremonies
             - 3 Roles
-            - 3 Artifacts
+            - 3 Primary Artifacts and 4 Secondary Artifacts
     -
-        header: Scrum Is
-        textClass: orange
+        header: Scrum Includes 3 Team Roles
         bullets:
-            - Intensionally Lightweight
-            - Simple (but not trivial) to understand
-            - Difficult to master
+            - Scrum Master
+            - Product Owner
+            - Development Team Member
+        notes:
+            - Everybody else that matters is a stakeholder or an SME/provider to the team
     -
-        header: Scrum is Not...
-        textClass: orange
+        header: Scrum Includes 3 Primary Artifacts
         bullets:
-            - A set of tools
-            - A set of mandates
-            - Failing to plan
-            - Not doing estimates
-            - Failing to prioritize
-            - A daily meeting
+            - Product Backlog
+            - Sprint Backlog
+            - Product Increment
+    -
+        header: Scrum Includes 4 Secondary Artifacts
+        bullets:
+            - Product Vision
+            - Product Roadmap
+            - Release Plan
+            - Burnup/burndown charts for the product and sprints
+    -
+        header: Scrum Includes 1 Shared Definition of Done
+        bullets:
+            - Working builds and tests
+            - Quality metrics including code complexity, test coverage, latency, etc.
+            - Demonstrable results
     -
         header: Scrum Includes 5 Levels of Planning
-        textClass: orange
         bullets:
             - Product Visioning
             - Product Road Mapping
             - Release Planning
             - Sprint Planning
             - Daily Planning
+        notes:
+            - Long-range plans are optimally fully fleshed and manifest in a product backlog before Sprint 0 but hey
+            - The 3 types of longer range planning are done in secondary meetings, too often skipped
     -
-        header: Scrum Includes 3 Team Roles
-        textClass: orange
+        header: Scrum Includes 5 Ceremonies
         bullets:
-            - Scrum Master
-            - Product Owner
-            - Development Team Member
-    -
-        header: Scrum Includes 3 Artifacts
-        textClass: orange
-        bullets:
-            - Product Backlog
-            - Sprint Backlog
-            - Product Increment
-    -
-        header: Scrum Includes 1 Shared Definition of Done
-        textClass: orange
-        bullets:
-            - Working builds and tests
-            - Quality metrics including code complexity, test coverage, latency, etc.
-            - Demonstrable results
-    -
-        header: Scrum Includes 4 Ceremonies
-        textClass: orange
-        bullets:
+            - *Backlog Grooming*
             - Sprint Planning
             - Daily Standup
             - Sprint Review
             - Retrospective
+        note:
+            - Backlog grooming is often omitted which is a fundamental cause of lost time and money
+            - Backlog grooming can and should happen frequently, though *unnecessary* churn can cause big problems
     -
         thread: start
-        header: Before We Dive In
-        subheader: Why Effective Meeting Facilitation Is Important
+        header: Why Effective Meeting Facilitation Is Important Period
+        subheader: Before We Dive In
         text: >
             Many of you might not facilitate meetings often, others may already know all of this stuff and do it very well.  Even if so, I bet you'd admit that you *could* do it better more often than not.  I know I do.
             Hopefully there will be a nugget or two in here that resonates for you.
             Also, think of this as a superset of things to do for all meetings; no meeting uses all techniques.
     -
-        header: Poorly-managed meetings *suck* for everyone involved
+        header: Why Effective Meeting Facilitation Is Important for Scrum
         bullets:
-            - Including non-present stakeholders, after all, our time is their money
-            - They waste time, accomplishing little or no actual business value
-            - They drain people's energy and create frustration
-            - They *deter* real participation in the desired outcomes, for present and future meetings
+            - Software development is uniquely complicated
+            - The core problem is getting so many people aligned on so many details
+            - Scrum meetings are the primary, the only required mechanism, because effective face-to-face communication is orders of magnitude better than any other way
+            - Accomplishing significant improvements in just 2 weeks requires relentless focus on outcomes that many stakeholders need to understand from a wide variety of perspectives
     -
         header: Well-managed meetings are effective, they feel good, and they are a lot more fun
         bullets:
@@ -104,6 +98,13 @@ slides:
             - They are more efficient, using less time and money for similar or better results
             - Create positive energy for the participants as they feel impactful, respected and valued
             - They reinforce a sense of contributing to something larger than oneself
+    -
+        header: Poorly-managed meetings *suck* for everyone involved
+        bullets:
+            - Including non-present stakeholders, after all, our time is their money
+            - They waste time, accomplishing little or no actual business value
+            - They drain people's energy and create frustration
+            - They *deter* real participation in the desired outcomes, for present and future meetings
     -
         header: How to Have Effective Meetings
         bullets:
@@ -113,26 +114,35 @@ slides:
             - 3. Prepare
             - 4. Structure and Control
             - 5. Summarize and Record
+        notes:
+            - Listen for and write down one or two things you can focus on trying to remember and improve for your own meetings
     -
-        header: "Plan: Get Clear on the Goal(s): Why"
+        header: "Plan: Get Clear on the Meeting Goal(s)"
         bullets:
             - A meeting with no goal is just a discussion.  At a formal meeting, discussion is a means, not an end in itself.
             - Think through what it is really needs to be accomplished and what *you* are really trying to accomplish
             - Perhaps you mean "To Inform", "To Understand", or "To Align", "To Decide", "To Learn" rather than "To Discuss"
             - Maybe you don't even need to have a meeting.  Will a simple email suffice?  Perhaps just an impromptu visit or two?
             - Even small meetings, especially standing/regular ones, are fairly heavy-weight; think about whether you can achieve the goal in a better/faster/cheaper way.
+            - "It is *always* good to start the formal meeting by reiterating and reconfirming the meeting goals with the audience: you are here for a *reason* beyond 'To discuss'"
+        notes:
+            - Don't just write them down, refer to and use them often as you plan and execute the meeting
+            - Beware the inertia of standing meetings without clear goals and outcomes
+            - Any time a goal starts with "To discuss", then somebody is being lazy or cagey; drive to clarity on tangible outcomes
     -
-        header: Well-crafted meeting goals
+        header: Well-crafted meeting goals Are...
         bullets:
             - Specific, clear and concise
             - Relevant and meaningful to attendees
-            - Assessable at meeting's end
             - Achievable
+            - Assessable at meeting's end
+        notes:
+            - Did we achieve our goals here today, why or why not, is always a fair question
     -
-        header: "Plan: Get Clear on the Agenda: What"
+        header: "Plan: Get Clear on the Agenda"
         bullets:
             - An agenda is not a substitute for a goal(s)
-            - An agenda is the content the team needs to cover in order to reach the goal(s)
+            - An agenda is the content, sequence and timing the team needs to cover in order to reach the meeting goal(s)
             - Use a logical sequence for the goal(s), attendees, time frame
             - Agenda topics *might need to be time-boxed* to ensure the overall goal(s) is met
             - Allocate time based on importance, not urgency
@@ -141,8 +151,11 @@ slides:
         header: " Plan: Have Just the Right People"
         bullets:
             - Invite all the people, and *only* those people, actually required to meet the goal
-            - Limit the number of people to the essentials.  We all have a need to be understood, so the time necessary to conduct any amount of business effectively goes up with every additional person.
+            - Limit the invitees to the essentials
             - If any of the required people cannot make it, seriously consider postponing it.  But, perhaps they are NOT so required...
+            - Not all meetings should include chickens (stakeholders as opposed to participants)
+        notes:
+            - We all have a need to be understood, so the time necessary to conduct any amount of business effectively goes up with every additional person
     -
         header: "Plan: Do Not Have A Meeting If You Should Not or Do Not Need One"
         bullets:
@@ -161,25 +174,23 @@ slides:
             - Start on time, or just a *little* fashionably late, once a quorum is present
             - Keep time and stick the agenda
             - Normally, whoever called a meeting facilitates it, but often that is not true, nor necessary
-            - Facilitators participate as well more often than not, but if the meeting is large enough, that may be difficult.  A different facilitator may be utilized by the meeting sponsor so she can more fully participate without distraction or domination
+            - Facilitators also participate more often than not, but if the meeting is large enough, that will be difficult
+            - A different facilitator may be utilized by the meeting sponsor so she can more fully participate without distraction or domination
+        notes:
             - What do you do when no quorum arrives on time?
     -
         header: "Structure and Control: Establish and Stick to Ground Rules"
-        subheader: "Identify the importance of and encourage:"
+        subheader: "As necessary, identify the importance of and adherence to ground rules for the meeting"
         bullets:
             - Open-ness
             - Safety
             - Respect
+            - Letting people finish
             - Participation
             - Focus
-    -
-        header: "Structure and Control: Establish and Stick to Ground Rules"
-        subheader: "As necessary, establish ground rules for the meeting e.g.:"
-        bullets:
-            - Use of screens
-            - Letting people finish
-            - Respect time-boxing
             - Parking lot tangents
+            - Use of screens
+            - Respect time-boxing
     -
         header: "Structure and Control: Somebody Probably Has to Scribe"
         bullets:
@@ -200,6 +211,9 @@ slides:
             - 2. Interpretation
             - 3. Action
             - 'When problem-solving, consider frameworks such as "5 Whys"'
+        notes:
+            - Very important to keep everyone in the same topic and mode e.g. brainstorming, problem solving, informing, decision making
+            - When one participant tries to go an unexpected direction or inappropriate length, use the goals and agenda to wrangle them back into the structure of the meeting.  The other participants will thank you.
     -
         header: "Structure and Control: Important Concentrations"
         subheader: Unite
@@ -297,6 +311,9 @@ slides:
             - Some participants may feel confused, inadequate, insecure, superior, etc.
             - Everyone brings preconceptions about the goals, topics, and participants that unconsciously inhibit open-ness to other points of view
             - Everyone brings their own predisposition to be positive or negative about *change*, which is what meetings are often about
+            - Talking and writing things down *during* the meeting is often far more effective at creating alignment than one person doing so and emailing it to everybody
+        notes:
+            - Again, be goal-driven
     -
         header: "Restating"
         bullets:
@@ -306,27 +323,28 @@ slides:
             - 4. Structure and Control, everybody likes fun
             - 5. Summarize and Record, make sure it sticks
     -
-        header: RAQs (Recently Asked Questions)
         thread: start
+        header: Facilitating the Scrum Ceremonies
         bullets:
-            - How can you get started when you still have data quality issues?
-            - What if the client has no plan?
-            - What are the differences and overlaps in responsibility for the Scrum Master and Product Owner?
-            - What is the client's responsibility?
-            - What is the difference between Acceptance Criteria and the Definition of Done?
-            - What makes Sprint Zero different from other sprints?  How is it the same?
-            - What if the client doesn't want to Sprint, or sprint review, or standup, or?
+            - Reinforce the goals of each meeting
+            - Relentlessly focus on adding features to working software, not how "done" we are
+            - Remove any all barriers as quickly as possible, hopefully during the meeting
+            - At first, write things down and follow up with an email summary to all participants
     -
         header: Facilitating Sprint Planning
-        textClass: white
-        thread: start
-        bullets: 
+        bullets:
             - Set and align on Sprint goal(s)
             - Figure out what can get done
             - Figure out how the selected work can get done
+            - Attendees might need to include stakeholders depending on the backlog
+            - Sprint backlog items with Acceptance Criteria are the usual goals
+            - Relentlessly focus on decomposing things into clear and concise statements about software features
+            - Create, adjust and/or confirm the *Definition of Done* as necessary
+        notes:
+            - You CAN start this meeting without a product backlog but you should end up with one
+            - Grooming with scribing the sprint and product backlogs is *essential*
     -
         header: Facilitating Daily Standups
-        textClass: white
         bullets:
             - Standup proper should be <= 15 minutes, focusing on the plans for the day
             - Problem-solving and other activities should be left to *after* standup proper (but should be done ASAP)
@@ -341,7 +359,6 @@ slides:
             - Tie comments back to the Sprint Backlog Item, not just a task. A task is a *personal* framing of the sprint plan; the *backlog item* is the *shared* framing of the sprint plan
     -
         header: Facilitating Sprint Reviews
-        textClass: white
         bullets:
             - Stakeholders invited by the Product Owner; all stakeholders should be considered
             - Product Owner demonstrates the product increment for review by all the attending Stakeholders
@@ -351,7 +368,6 @@ slides:
             - "The Product Owner explains what Product Backlog items have been Done and what has not been Done"
     -
         header: Sprint Review Agenda
-        textClass: white
         bullets:
             - Product Owner (or the development team): demonstrates the product increment
             - Product Owner explains what Product Backlog items have been Done and what has not been Done
@@ -360,20 +376,36 @@ slides:
             - The Prioritized Backlog is reviewed and may be groomed as the larger group collaborates on what should be done next
     -
         header: Facilitating Retrospectives
-        textClass: white
         bullets:
             - Examine the sprint with regards to people, relationships, process, and tools
             - Identify and order the major items that went well and potential improvements
+            - Go over the action items from the last retrospective and assess their status, impact, etc.
             - Create a plan for implementing improvements to the way the Scrum Team does its work
+            - Try and find at least one thing the team can try to do differently during the next sprint in order to get better
+            - Look for messages to take back to the Product Owner and Executive Sponsors around removing impediments
     -
-        header: "How Could This Presentation Be Better"
+        header: RAQs (Recently Asked Questions)
+        thread: start
         bullets:
-            - Things to amplify
-            - Things to reduce, avoid, eliminate
+            - How can you get started when you still have data quality issues?
+            - What if the client has no plan?
+            - What are the differences and overlaps in responsibility for the Scrum Master and Product Owner?
+            - What is the client's responsibility?
+            - What is the difference between Acceptance Criteria and the Definition of Done?
+            - What makes Sprint Zero different from other sprints?  How is it the same?
+            - What if the client doesn't want to Sprint, or sprint review, or standup, or?
     -
-        header: "Sources"
+        header: Sprint Zero
         bullets:
-            - "Meetings Bloody Meetings"
-            - "More Bloody Meetings"
-            - "The Checklist Manifesto"
-            - Many more
+            - Often the first for a team working together
+            - Often requires developers setting up development
+            - Often starts with no formal backlog
+            - Difficult to demonstrate a working increment that meets business objectives, but not impossible
+            - Use this time to educate and reinforce on the Scrumming to come
+    -
+        header: Definition of Done
+        bullets:
+            - Remains relatively consistent throughout a product's lifecycle
+            - Describes a static state of the quality of the code base e.g. test coverage, complexity, do
+    -
+        header: Acceptance Criteria

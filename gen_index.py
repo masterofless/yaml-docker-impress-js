@@ -4,11 +4,11 @@ import re
 text = """
 <html>
     <head>
-        <title>YAML Presentations with Impress.js and Docker</title>
-        <link href="css/yaml-presents.css" rel="stylesheet" type="text/css" >
+        <title>Presentations with Docker, YAML and Impress.js</title>
+        <link href="yaml_presents.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <h1>YAML Presentations with Impress.js and Docker</h1>
+        <h1>Presentations with Docker, YAML and Impress.js</h1>
         <div id="main">
             <ul>
 """
