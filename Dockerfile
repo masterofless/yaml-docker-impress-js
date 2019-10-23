@@ -3,13 +3,15 @@ RUN yum install -y httpd python
 
 WORKDIR /python
 
-ADD http://pyyaml.org/download/pyyaml/PyYAML-3.12.tar.gz /python/pyyaml.tar.gz
-WORKDIR /python/pyyaml.tar.gz/PyYAML-3.12/
+ADD http://pyyaml.org/download/pyyaml/PyYAML-5.1.tar.gz /python/pyyaml.tar.gz
+WORKDIR /tmp
+RUN tar xzvf /python/pyyaml.tar.gz
+WORKDIR /tmp/PyYAML-5.1
 RUN python setup.py install
 
 WORKDIR /presos
 
-ADD https://code.jquery.com/jquery-3.2.0.min.js /presos/jquery.js
+ADD https://code.jquery.com/jquery-3.4.1.min.js /presos/jquery.js
 ADD https://raw.githubusercontent.com/impress/impress.js/master/js/impress.js /presos/impress.js
 
 COPY *.sh /presos/
