@@ -6,7 +6,7 @@ hostport=8888
 set -x
 
 docker kill $tag || true
-docker rm $tag || true
+# docker rm $tag || true
 
 docker build -t $tag .
 
